@@ -1,5 +1,12 @@
 workflows:
-  my-workflow:
+  android:
+    name: build, test & publish Android version
     scripts:
-      - name: say hello
-        script: echo "Hello Codemagician!"
+      - ...
+  ios:
+    name: build, test & publish iOS version
+    scripts:
+      - ...
+  my-workflow:
+    environment:
+      flutter: master
